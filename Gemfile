@@ -1,12 +1,25 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.1'
-gem 'rake', '~> 0.8.7' # Temporary fix for Rake 0.9.0
+gem 'rails', '3.1.3'
 
 # Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
+# gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
-gem 'mysql2', '0.2.7'
+gem 'mysql2'
+
+
+# Gems used only for assets and not required
+# in production environments by default.
+group :assets do
+  gem 'sass-rails',   '~> 3.1.5'
+  gem 'coffee-rails', '~> 3.1.1'
+  gem 'uglifier', '>= 1.0.3'
+end
+
+gem 'jquery-rails'
+
+# To use ActiveModel has_secure_password
+# gem 'bcrypt-ruby', '~> 3.0.0'
 
 # Use unicorn as the web server
 # gem 'unicorn'
@@ -15,23 +28,5 @@ gem 'mysql2', '0.2.7'
 # gem 'capistrano'
 
 # To use debugger
-# gem 'ruby-debug'
+# gem 'ruby-debug19', :require => 'ruby-debug'
 
-# Bundle the extra gems:
-# gem 'bj'
-# gem 'nokogiri'
-# gem 'mysql2', :require => 'sqlite3'
-# gem 'aws-s3', :require => 'aws/s3'
-
-# Bundle gems for the local environment. Make sure to
-# put test-only gems in this group so their generators
-# and rake tasks are available in development mode:
-# group :development, :test do
-#   gem 'webrat'
-# end
-gem "jammit"
-gem "jquery-rails"
-gem "omniauth", "~> 0.2.0"
-gem "settingslogic"
-gem "activeadmin", "~> 0.2.2"
-gem 'awesome_print'
